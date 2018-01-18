@@ -36,8 +36,12 @@ function pp(){
 		map.addOverlay(marker);
 		marker.setLabel(label);
 marker.addEventListener("dblclick", function(){
-  map.centerAndZoom(this.getPosition(),18);
-})
+        if(map.getZoom()==18){
+                map.centerAndZoom(new BMap.Point(107.732, 36.757), 6);
+        }else{
+                map.centerAndZoom(this.getPosition(),18);
+        }
+        })
 		
 	}
 }
