@@ -37,7 +37,7 @@
                     "featureType": "manmade",
                     "elementType": "all",
                     "stylers": {
-                              "visibility": "off"
+                              "visibility": "on"
                     }
           },
 {
@@ -85,7 +85,7 @@
           }
 ]} )
 	map.centerAndZoom(new BMap.Point(107.732, 36.757), 6);
-//	map.addControl(new BMap.MapTypeControl());
+	map.addControl(new BMap.MapTypeControl());
 	map.enableScrollWheelZoom(true);
 	var top_left_control = new BMap.ScaleControl({anchor: BMAP_ANCHOR_TOP_LEFT});// 左上角，添加比例尺
 	var top_left_navigation = new BMap.NavigationControl();  //左上角，添加默认缩放平移控件
@@ -126,6 +126,9 @@
 		}
 		map.addOverlay(marker);
 		marker.setLabel(label);
+marker.addEventListener("dblclick", function(){    
+  map.centerAndZoom(this.getPosition(),18);
+})
 		
 	}
 	function myrefresh() {

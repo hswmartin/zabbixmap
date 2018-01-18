@@ -35,6 +35,9 @@ function pp(){
 		}
 		map.addOverlay(marker);
 		marker.setLabel(label);
+marker.addEventListener("dblclick", function(){
+  map.centerAndZoom(this.getPosition(),18);
+})
 		
 	}
 }
