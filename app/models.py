@@ -5,8 +5,8 @@ import os
 import re
 
 
-basedir = os.path.abspath(os.path.dirname(__file__)) + "\\templates\\data.json"
-
+basedir = os.path.abspath(os.path.dirname(__file__)) + "/templates/data.json"
+basedir2 = os.path.abspath(os.path.dirname(__file__)) + "/templates/data2.json"
 
 def getgrouplist():
     data = json.dumps(
@@ -110,47 +110,64 @@ def secondtoday(seconds):
     day = ((int(seconds) / 60) / 60) / 24
     return [minute, hour, day]
 
+def site_info(datadir,n):
+    site_info = []
+    for site in Config.site_info[n]:
+        site_info.append(site)
+    json.dump(site_info, open(datadir, 'w'))
 
-def showvalues(datadir):
+def showvalues(datadir,n):
     listofgroup = {}
     for groupid in Config.groupid:
         hostlist = gethostlist(groupid)
         listofhost = []
-        for hostname in Config.listofhost:
+        for hostname in Config.listofhost[n]:
             listofitem = []
             listofnetwork = []
+            listofnetworkin = []
             networkflow = 0
+            networkflowin = 0
             hostid = hostlist[hostname]
             itemlist = getitemlist(hostid)
             for itemkey in itemlist.keys():
-                networktrue = re.match(r'ifOutOctets.*WAN.*', itemkey)
-                quanzhou = re.match(r'ifOutOctets.*1/0/23.*', itemkey)
-                if itemkey == 'sysUpTime':
+                networkout = re.match(r'net.if.out\[.*', itemkey)
+                networkin = re.match(r'net.if.in\[.*', itemkey)
+                if itemkey == 'system.uptime':
                     itemid = itemlist[itemkey]
                     itemvalue = getitemvalue(itemid)
                     if itemvalue:
                         listofitem.append(itemvalue[itemid])
                     else:
                         listofitem.append('0')
-                elif itemkey == 'icmpping':
+                elif itemkey == 'icmpping' or itemkey == 'agent.ping':
                     itemid = itemlist[itemkey]
                     itemvalue = getitemvalue(itemid)
                     if itemvalue:
                         listofitem.append(itemvalue[itemid])
                     else:
                         listofitem.append('0')
-                elif networktrue or quanzhou:
+                elif networkout:
                     itemid = itemlist[itemkey]
                     itemvalue = getitemvalue(itemid)
                     if itemvalue:
                         listofnetwork.append(itemvalue[itemid])
                     else:
                         listofnetwork.append('0')
+                elif networkin:
+                    itemid = itemlist[itemkey]
+                    itemvalue = getitemvalue(itemid)
+                    if itemvalue:
+                        listofnetworkin.append(itemvalue[itemid])
+                    else:
+                        listofnetworkin.append('0')
                 else:
                     continue
             for i in range(0, len(listofnetwork)):
                 networkflow += int(listofnetwork[i])
+            for i in range(0, len(listofnetworkin)):
+                networkflowin += int(listofnetworkin[i])
             listofitem.append(networkflow / 1024 / 1024.00)
+            listofitem.append(networkflowin / 1024 / 1024.00)
             listofhost.append(listofitem)
         listofgroup[groupid] = listofhost
     json.dump(listofgroup, open(datadir, 'w'))

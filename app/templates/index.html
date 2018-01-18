@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html class="result">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
 	<style type="text/css">
 	body, html,#allmap {width: 100%;height: 100%;overflow: hidden;margin:0;font-family:"微软雅黑";}
 	</style>
-    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=改为你自己的就行了"></script>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=u6HvvkTSdB7sVCZCpiyDapGcIFC17MiA"></script>
+<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
 	<title>地图展示</title>
 </head>
 <body>
@@ -15,8 +16,76 @@
 </html>
 <script type="text/javascript">
 	var map = new BMap.Map("allmap", {minZoom:5,maxZoom:18});
-	map.centerAndZoom(new BMap.Point(107.732, 33.757), 6);
-	map.addControl(new BMap.MapTypeControl());
+        map.setMapStyle({  styleJson :  [
+          {
+                    "featureType": "road",
+                    "elementType": "all",
+                    "stylers": {
+                              "color": "#6fa8dcff",
+                              "visibility": "off"
+                    }
+          },
+		{
+                    "featureType": "land",
+                    "elementType": "all",
+                    "stylers": {
+                              "color": "#242222"
+                    }
+          },
+
+{
+                    "featureType": "manmade",
+                    "elementType": "all",
+                    "stylers": {
+                              "visibility": "off"
+                    }
+          },
+{
+                    "featureType": "town",
+                    "elementType": "all",
+                    "stylers": {
+                              "visibility": "off"
+                    }
+          },
+          {
+                    "featureType": "district",
+                    "elementType": "all",
+                    "stylers": {
+                              "visibility": "off"
+                    }
+          },
+{
+                    "featureType": "building",
+                    "elementType": "all",
+                    "stylers": {
+                              "visibility": "off"
+                    }
+          },
+{
+                    "featureType": "water",
+                    "elementType": "all",
+                    "stylers": {
+                              "color": "#5672CC",
+                              "visibility": "on"
+                    }
+          },
+{
+                    "featureType": "city",
+                    "elementType": "all",
+                    "stylers": {
+                              "visibility": "on"
+                    }
+          },
+{
+                    "featureType": "district",
+                    "elementType": "all",
+                    "stylers": {
+                              "visibility": "off"
+                    }
+          }
+]} )
+	map.centerAndZoom(new BMap.Point(107.732, 36.757), 6);
+//	map.addControl(new BMap.MapTypeControl());
 	map.enableScrollWheelZoom(true);
 	var top_left_control = new BMap.ScaleControl({anchor: BMAP_ANCHOR_TOP_LEFT});// 左上角，添加比例尺
 	var top_left_navigation = new BMap.NavigationControl();  //左上角，添加默认缩放平移控件
@@ -25,32 +94,43 @@
         var data_info = {{ site_info|safe }};
 	var data_value = {{ showvalue|safe }};
 	for(var i= 0;i<data_info.length;i++){
-		var minute = parseInt((parseInt(data_value['11'][i][1]) / 60) % 60);
-		var hour = parseInt(((parseInt(data_value['11'][i][1]) / 60) / 60) % 24);
-		var day = parseInt(((parseInt(data_value['11'][i][1]) / 60) / 60) / 24);
-		var networkflow = data_value['11'][i][2];
+		var minute = parseInt((parseInt(data_value['9'][i][1]) / 60) % 60);
+		var hour = parseInt(((parseInt(data_value['9'][i][1]) / 60) / 60) % 24);
+		var day = parseInt(((parseInt(data_value['9'][i][1]) / 60) / 60) / 24);
+		var networkflow = data_value['9'][i][2];
+                var netin=data_value['9'][i][3];
 		var networkflow1 = networkflow.toFixed(3);
+                var netin1=netin.toFixed(3);
 		var point = new BMap.Point(data_info[i][0],data_info[i][1]);
 		var content1 = data_info[i][2] + networkflow1 + " Mbps";
         	var content2 = "在线时间:"+day+"天"+hour+"小时"+minute+"分钟";
+                content2="当前入口流量:"+netin1+" Mbps";
 		var content3 = content1 + '<br>' + content2;
-		var label = new BMap.Label(content3, {offset:new BMap.Size(27,-10)});
-		if (parseInt(data_value['11'][i][0])==0 || networkflow1 == 0.000){
-			var myIcon = new BMap.Icon('{{ url_for('static', filename='hs.png')}}', new BMap.Size(100,100));
+		var label = new BMap.Label(content3, {offset:new BMap.Size(27,-8)});
+                
+		if (parseInt(data_value['9'][i][0])==0 || networkflow1 == 0.000){
+			var myIcon = new BMap.Icon('{{ url_for('static', filename='hs.png')}}', new BMap.Size(32,32),{anchor: new BMap.Size(16, 32)});
 			var marker = new BMap.Marker(point, {icon:myIcon});
+			label.setStyle({ color : "red", fontSize : "8px" ,borderColor:"red"})
 			//marker.setAnimation(BMAP_ANIMATION_BOUNCE);
-		}
+		}else if(content1.indexOf("VPN")!=-1){
+                        var myIcon = new BMap.Icon('{{ url_for('static', filename='vpn.png')}}', new BMap.Size(32,32),{anchor: new BMap.Size(16, 32)});
+                        var marker = new BMap.Marker(point, {icon:myIcon});
+                        label.setStyle({ color : "black", fontSize : "8px" ,borderColor:"blue"})
+                        //marker.setAnimation(BMAP_ANIMATION_BOUNCE);
+                }
 		else{
-			var myIcon = new BMap.Icon('{{ url_for('static', filename='ls.png')}}', new BMap.Size(100,100));
+			var myIcon = new BMap.Icon('{{ url_for('static', filename='ls.png')}}', new BMap.Size(32,32),{anchor: new BMap.Size(16, 32)});
 			var marker = new BMap.Marker(point, {icon:myIcon});
+			label.setStyle({ color : "black", fontSize : "8px" ,borderColor:"green"})
 		}
 		map.addOverlay(marker);
 		marker.setLabel(label);
 		
 	}
 	function myrefresh() {
-		window.location.reload();
+$.getScript("rr");		
+setTimeout('pp()',3000);
 	}
 	setTimeout('myrefresh()',60000);
-
 </script>

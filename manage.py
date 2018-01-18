@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 from app import create_app
 from flask.ext.script import Manager, Shell
-
+#import app
 app = create_app('default')
 manager = Manager(app)
 
