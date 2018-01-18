@@ -1,0 +1,9 @@
+ZabbixMap启动说明：
+Step 1:取得root权限：
+su -
+Step 2:加载虚拟环境：
+source /home/zabbix/zabbixmap/.env/bin/activate
+Step 3:启动uWSGI
+uwsgi --ini /home/zabbix/uwsgi.ini
+Step 4:重启nginx
+service nginx restart
