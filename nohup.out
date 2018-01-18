@@ -1,0 +1,246 @@
+ * Running on http://0.0.0.0:8099/ (Press CTRL+C to quit)
+ * Restarting with stat
+10.0.7.2 - - [07/Dec/2017 12:21:38] "GET / HTTP/1.1" 200 -
+10.0.7.2 - - [07/Dec/2017 12:21:38] "GET / HTTP/1.1" 200 -
+Traceback (most recent call last):
+  File "/usr/lib64/python2.6/SocketServer.py", line 293, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib64/python2.6/SocketServer.py", line 319, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python2.6/SocketServer.py", line 332, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python2.6/SocketServer.py", line 628, in __init__
+    self.finish()
+  File "/usr/lib64/python2.6/SocketServer.py", line 671, in finish
+    self.wfile.flush()
+  File "/usr/lib64/python2.6/socket.py", line 303, in flush
+    self._sock.sendall(buffer(data, write_offset, buffer_size))
+error: [Errno 32] Broken pipe
+10.0.7.201 - - [07/Dec/2017 12:21:44] "GET / HTTP/1.1" 200 -
+10.0.7.2 - - [07/Dec/2017 12:22:19] "GET / HTTP/1.1" 200 -
+10.0.7.2 - - [07/Dec/2017 12:22:20] "GET /favicon.ico HTTP/1.1" 404 -
+10.0.7.2 - - [07/Dec/2017 12:22:24] "GET /static/ls.png HTTP/1.1" 200 -
+10.0.7.2 - - [07/Dec/2017 12:22:24] "GET /static/hs.png HTTP/1.1" 200 -
+10.0.7.2 - - [07/Dec/2017 12:23:01] "GET / HTTP/1.1" 200 -
+10.0.7.2 - - [07/Dec/2017 12:23:04] "GET /static/ls.png HTTP/1.1" 200 -
+10.0.7.2 - - [07/Dec/2017 12:23:04] "GET /static/hs.png HTTP/1.1" 200 -
+10.0.7.2 - - [07/Dec/2017 12:23:06] "GET /favicon.ico HTTP/1.1" 404 -
+10.0.7.2 - - [07/Dec/2017 12:24:43] "GET / HTTP/1.1" 200 -
+Traceback (most recent call last):
+  File "/usr/lib64/python2.6/SocketServer.py", line 293, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib64/python2.6/SocketServer.py", line 319, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python2.6/SocketServer.py", line 332, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python2.6/SocketServer.py", line 628, in __init__
+    self.finish()
+  File "/usr/lib64/python2.6/SocketServer.py", line 671, in finish
+    self.wfile.flush()
+  File "/usr/lib64/python2.6/socket.py", line 303, in flush
+    self._sock.sendall(buffer(data, write_offset, buffer_size))
+error: [Errno 32] Broken pipe
+10.0.7.201 - - [07/Dec/2017 12:24:43] "GET / HTTP/1.1" 200 -
+10.0.7.2 - - [07/Dec/2017 12:24:43] "GET / HTTP/1.1" 200 -
+10.0.7.2 - - [07/Dec/2017 12:27:44] "GET / HTTP/1.1" 200 -
+Traceback (most recent call last):
+  File "/usr/lib64/python2.6/SocketServer.py", line 293, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib64/python2.6/SocketServer.py", line 319, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python2.6/SocketServer.py", line 332, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python2.6/SocketServer.py", line 628, in __init__
+    self.finish()
+  File "/usr/lib64/python2.6/SocketServer.py", line 671, in finish
+    self.wfile.flush()
+  File "/usr/lib64/python2.6/socket.py", line 303, in flush
+    self._sock.sendall(buffer(data, write_offset, buffer_size))
+error: [Errno 32] Broken pipe
+10.0.7.2 - - [07/Dec/2017 12:27:44] "GET / HTTP/1.1" 200 -
+Traceback (most recent call last):
+  File "/usr/lib64/python2.6/SocketServer.py", line 293, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib64/python2.6/SocketServer.py", line 319, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python2.6/SocketServer.py", line 332, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python2.6/SocketServer.py", line 628, in __init__
+    self.finish()
+  File "/usr/lib64/python2.6/SocketServer.py", line 671, in finish
+    self.wfile.flush()
+  File "/usr/lib64/python2.6/socket.py", line 303, in flush
+    self._sock.sendall(buffer(data, write_offset, buffer_size))
+error: [Errno 32] Broken pipe
+10.0.7.201 - - [07/Dec/2017 12:27:44] "GET /static/ls.png HTTP/1.1" 304 -
+10.0.7.201 - - [07/Dec/2017 12:27:44] "GET /static/hs.png HTTP/1.1" 304 -
+10.0.7.2 - - [07/Dec/2017 12:27:44] "GET /favicon.ico HTTP/1.1" 404 -
+10.0.7.2 - - [07/Dec/2017 12:27:44] "GET / HTTP/1.1" 200 -
+10.0.7.2 - - [07/Dec/2017 12:27:44] "GET / HTTP/1.1" 200 -
+Traceback (most recent call last):
+  File "/usr/lib64/python2.6/SocketServer.py", line 293, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/usr/lib64/python2.6/SocketServer.py", line 319, in process_request
+    self.finish_request(request, client_address)
+  File "/usr/lib64/python2.6/SocketServer.py", line 332, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/usr/lib64/python2.6/SocketServer.py", line 628, in __init__
+    self.finish()
+  File "/usr/lib64/python2.6/SocketServer.py", line 671, in finish
+    self.wfile.flush()
+  File "/usr/lib64/python2.6/socket.py", line 303, in flush
+    self._sock.sendall(buffer(data, write_offset, buffer_size))
+error: [Errno 32] Broken pipe
+ * Running on http://0.0.0.0:8099/ (Press CTRL+C to quit)
+Traceback (most recent call last):
+  File "manage.py", line 25, in <module>
+    manager.run()
+  File "/root/myproject/venv/lib/python2.6/site-packages/flask_script/__init__.py", line 405, in run
+    result = self.handle(sys.argv[0], sys.argv[1:])
+  File "/root/myproject/venv/lib/python2.6/site-packages/flask_script/__init__.py", line 384, in handle
+    return handle(app, *positional_args, **kwargs)
+  File "/root/myproject/venv/lib/python2.6/site-packages/flask_script/commands.py", line 371, in handle
+    **self.server_options)
+  File "/root/myproject/venv/lib/python2.6/site-packages/flask/app.py", line 772, in run
+    run_simple(host, port, self, **options)
+  File "/root/myproject/venv/lib/python2.6/site-packages/werkzeug/serving.py", line 618, in run_simple
+    test_socket.bind((hostname, port))
+  File "<string>", line 1, in bind
+socket.error: [Errno 98] Address already in use
+ * Running on http://0.0.0.0:8099/ (Press CTRL+C to quit)
+ * Restarting with stat
+10.0.7.17 - - [07/Dec/2017 12:29:46] "GET / HTTP/1.1" 200 -
+Traceback (most recent call last):
+  File "manage.py", line 2, in <module>
+    from app import create_app
+  File "/home/zabbix/zabbixmap/app/__init__.py", line 1, in <module>
+    from flask import Flask
+ImportError: No module named flask
+ * Running on http://0.0.0.0:8099/ (Press CTRL+C to quit)
+ * Restarting with stat
+10.0.7.3 - - [16/Jan/2018 02:43:28] "GET / HTTP/1.1" 200 -
+10.0.7.3 - - [16/Jan/2018 02:43:52] "GET / HTTP/1.1" 200 -
+10.0.7.3 - - [16/Jan/2018 02:43:55] "GET / HTTP/1.1" 200 -
+10.0.7.3 - - [16/Jan/2018 02:44:27] "GET / HTTP/1.1" 200 -
+10.0.7.3 - - [16/Jan/2018 02:44:27] "GET / HTTP/1.1" 200 -
+10.0.7.3 - - [16/Jan/2018 02:44:27] "GET / HTTP/1.1" 200 -
+10.0.7.3 - - [16/Jan/2018 02:44:28] "GET / HTTP/1.1" 200 -
+10.0.7.3 - - [16/Jan/2018 02:44:28] "GET / HTTP/1.1" 200 -
+10.0.7.3 - - [16/Jan/2018 02:44:28] "GET / HTTP/1.1" 200 -
+Traceback (most recent call last):
+  File "/root/.localpython/lib/python2.7/SocketServer.py", line 295, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/root/.localpython/lib/python2.7/SocketServer.py", line 321, in process_request
+    self.finish_request(request, client_address)
+  File "/root/.localpython/lib/python2.7/SocketServer.py", line 334, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/root/.localpython/lib/python2.7/SocketServer.py", line 657, in __init__
+    self.finish()
+  File "/root/.localpython/lib/python2.7/SocketServer.py", line 716, in finish
+    self.wfile.close()
+  File "/root/.localpython/lib/python2.7/socket.py", line 279, in close
+    self.flush()
+  File "/root/.localpython/lib/python2.7/socket.py", line 303, in flush
+    self._sock.sendall(view[write_offset:write_offset+buffer_size])
+error: [Errno 32] Broken pipe
+10.0.7.3 - - [16/Jan/2018 02:44:28] "GET / HTTP/1.1" 200 -
+10.0.7.3 - - [16/Jan/2018 02:44:28] "GET / HTTP/1.1" 200 -
+10.0.7.3 - - [16/Jan/2018 02:44:29] "GET / HTTP/1.1" 200 -
+10.0.7.3 - - [16/Jan/2018 02:44:29] "GET / HTTP/1.1" 200 -
+10.0.7.3 - - [16/Jan/2018 02:44:30] "GET / HTTP/1.1" 200 -
+10.0.7.9 - - [16/Jan/2018 02:44:37] "GET / HTTP/1.1" 200 -
+10.0.7.9 - - [16/Jan/2018 02:46:38] "GET /rr?_=1516070678978 HTTP/1.1" 200 -
+10.0.7.9 - - [16/Jan/2018 02:48:38] "GET /rr?_=1516070678979 HTTP/1.1" 200 -
+10.0.7.9 - - [16/Jan/2018 02:50:38] "GET /rr?_=1516070678980 HTTP/1.1" 200 -
+10.203.5.7 - - [16/Jan/2018 02:51:57] "GET / HTTP/1.1" 200 -
+10.203.5.7 - - [16/Jan/2018 02:51:58] "GET /favicon.ico HTTP/1.1" 404 -
+10.203.5.7 - - [16/Jan/2018 02:52:08] "GET / HTTP/1.1" 200 -
+10.203.5.7 - - [16/Jan/2018 02:52:28] "GET / HTTP/1.1" 200 -
+10.0.7.9 - - [16/Jan/2018 02:52:38] "GET /rr?_=1516070678981 HTTP/1.1" 200 -
+10.203.5.7 - - [16/Jan/2018 02:52:52] "GET / HTTP/1.1" 200 -
+10.203.5.7 - - [16/Jan/2018 02:52:53] "GET /static/ls.png HTTP/1.1" 200 -
+10.203.5.7 - - [16/Jan/2018 02:52:53] "GET /static/hs.png HTTP/1.1" 200 -
+10.0.7.9 - - [16/Jan/2018 02:53:22] "GET / HTTP/1.1" 200 -
+10.203.5.7 - - [16/Jan/2018 02:54:53] "GET /rr?_=1516071176691 HTTP/1.1" 200 -
+10.0.7.9 - - [16/Jan/2018 02:55:23] "GET /rr?_=1516071204362 HTTP/1.1" 200 -
+10.203.5.7 - - [16/Jan/2018 02:55:57] "GET / HTTP/1.1" 200 -
+10.0.7.9 - - [16/Jan/2018 02:56:07] "GET / HTTP/1.1" 200 -
+10.0.7.9 - - [16/Jan/2018 02:56:07] "GET /static/ls.png HTTP/1.1" 304 -
+10.0.7.9 - - [16/Jan/2018 02:56:07] "GET /static/hs.png HTTP/1.1" 304 -
+10.0.7.9 - - [16/Jan/2018 02:58:07] "GET /rr?_=1516071368890 HTTP/1.1" 200 -
+10.0.7.9 - - [16/Jan/2018 03:00:07] "GET /rr?_=1516071368891 HTTP/1.1" 200 -
+10.0.7.9 - - [16/Jan/2018 03:02:07] "GET /rr?_=1516071368892 HTTP/1.1" 200 -
+10.203.5.7 - - [16/Jan/2018 03:03:08] "GET / HTTP/1.1" 200 -
+10.0.7.2 - - [16/Jan/2018 03:03:19] "GET /favicon.ico HTTP/1.1" 404 -
+10.203.5.7 - - [16/Jan/2018 03:03:57] "GET / HTTP/1.1" 200 -
+10.0.7.9 - - [16/Jan/2018 03:04:08] "GET /rr?_=1516071368893 HTTP/1.1" 200 -
+10.0.7.9 - - [16/Jan/2018 03:04:13] "GET / HTTP/1.1" 200 -
+10.0.7.9 - - [16/Jan/2018 03:04:13] "GET / HTTP/1.1" 200 -
+Traceback (most recent call last):
+  File "/root/.localpython/lib/python2.7/SocketServer.py", line 295, in _handle_request_noblock
+    self.process_request(request, client_address)
+  File "/root/.localpython/lib/python2.7/SocketServer.py", line 321, in process_request
+    self.finish_request(request, client_address)
+  File "/root/.localpython/lib/python2.7/SocketServer.py", line 334, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "/root/.localpython/lib/python2.7/SocketServer.py", line 657, in __init__
+    self.finish()
+  File "/root/.localpython/lib/python2.7/SocketServer.py", line 716, in finish
+    self.wfile.close()
+  File "/root/.localpython/lib/python2.7/socket.py", line 279, in close
+    self.flush()
+  File "/root/.localpython/lib/python2.7/socket.py", line 303, in flush
+    self._sock.sendall(view[write_offset:write_offset+buffer_size])
+error: [Errno 32] Broken pipe
+10.203.5.7 - - [16/Jan/2018 03:05:58] "GET /rr?_=1516071841920 HTTP/1.1" 200 -
+10.0.7.9 - - [16/Jan/2018 03:06:13] "GET /rr?_=1516071854979 HTTP/1.1" 200 -
+10.203.5.7 - - [16/Jan/2018 03:07:59] "GET /rr?_=1516071841921 HTTP/1.1" 200 -
+10.0.7.9 - - [16/Jan/2018 03:08:13] "GET /rr?_=1516071854980 HTTP/1.1" 200 -
+10.203.5.7 - - [16/Jan/2018 03:10:00] "GET /rr?_=1516071841922 HTTP/1.1" 200 -
+10.0.7.9 - - [16/Jan/2018 03:10:13] "GET /rr?_=1516071854981 HTTP/1.1" 200 -
+10.0.7.9 - - [16/Jan/2018 03:11:29] "GET / HTTP/1.1" 200 -
+10.203.5.7 - - [16/Jan/2018 03:11:49] "GET / HTTP/1.1" 200 -
+10.0.7.9 - - [16/Jan/2018 03:13:29] "GET /rr?_=1516072290892 HTTP/1.1" 200 -
+10.203.5.7 - - [16/Jan/2018 03:13:51] "GET /rr?_=1516072313933 HTTP/1.1" 200 -
+10.0.7.9 - - [16/Jan/2018 03:15:29] "GET /rr?_=1516072290893 HTTP/1.1" 200 -
+10.203.5.7 - - [16/Jan/2018 03:15:51] "GET /rr?_=1516072313934 HTTP/1.1" 200 -
+10.0.7.9 - - [16/Jan/2018 03:17:29] "GET /rr?_=1516072290894 HTTP/1.1" 200 -
+10.203.5.7 - - [16/Jan/2018 03:17:51] "GET /rr?_=1516072313935 HTTP/1.1" 200 -
+ * Detected change in '/home/zabbix/zabbixmap/config.py', reloading
+----------------------------------------
+Exception happened during processing of request from ('10.0.7.3', 53376)
+----------------------------------------
+----------------------------------------
+Exception happened during processing of request from ('10.0.7.9', 63174)
+----------------------------------------
+ * Restarting with stat
+Traceback (most recent call last):
+  File "manage.py", line 2, in <module>
+    from app import create_app
+  File "/home/zabbix/zabbixmap/app/__init__.py", line 2, in <module>
+    from config import config
+  File "/home/zabbix/zabbixmap/config.py", line 7, in <module>
+    class Config:
+  File "/home/zabbix/zabbixmap/config.py", line 68, in Config
+    [125.350592,43.88681, "长春交换机<br>当前出口流量:"],
+TypeError: list indices must be integers, not tuple
+Traceback (most recent call last):
+  File "manage.py", line 2, in <module>
+    from app import create_app
+  File "/home/zabbix/zabbixmap/app/__init__.py", line 2, in <module>
+    from config import config
+  File "/home/zabbix/zabbixmap/config.py", line 7, in <module>
+    class Config:
+  File "/home/zabbix/zabbixmap/config.py", line 68, in Config
+    [125.350592,43.88681, "长春交换机<br>当前出口流量:"],
+TypeError: list indices must be integers, not tuple
+Traceback (most recent call last):
+  File "manage.py", line 2, in <module>
+    from app import create_app
+  File "/home/zabbix/zabbixmap/app/__init__.py", line 2, in <module>
+    from config import config
+  File "/home/zabbix/zabbixmap/config.py", line 7, in <module>
+    class Config:
+  File "/home/zabbix/zabbixmap/config.py", line 68, in Config
+    [125.350592,43.88681, "长春交换机<br>当前出口流量:"],
+TypeError: list indices must be integers, not tuple

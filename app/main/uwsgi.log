@@ -1,0 +1,432 @@
+*** Starting uWSGI 2.0.15 (64bit) on [Thu Dec  7 14:36:34 2017] ***
+compiled with version: 4.4.7 20120313 (Red Hat 4.4.7-17) on 21 September 2017 09:28:53
+os: Linux-2.6.32-504.el6.x86_64 #1 SMP Wed Oct 15 04:27:16 UTC 2014
+nodename: localhost.localdomain
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 16
+current working directory: /root/myproject/venv
+detected binary path: /usr/local/python27/bin/uwsgi
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /root/myproject/venv/zabbixmap/app/main
+your processes number limit is 65535
+your memory page size is 4096 bytes
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /root/myproject/venv/zabbixmap/app/main/mysite.sock fd 3
+Python version: 2.7.8 (default, Sep 21 2017, 09:25:28)  [GCC 4.4.7 20120313 (Red Hat 4.4.7-17)]
+Set PythonHome to /root/myproject/venv/zabbixmap/app/main/.env
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0xe6f280
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 218304 bytes (213 KB) for 2 cores
+*** Operational MODE: preforking ***
+Traceback (most recent call last):
+  File "./views.py", line 3, in <module>
+    from flask import render_template
+ImportError: No module named flask
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 28638)
+spawned uWSGI worker 1 (pid: 28639, cores: 1)
+spawned uWSGI worker 2 (pid: 28640, cores: 1)
+*** Starting uWSGI 2.0.15 (64bit) on [Thu Dec  7 14:37:24 2017] ***
+compiled with version: 4.4.7 20120313 (Red Hat 4.4.7-17) on 21 September 2017 09:28:53
+os: Linux-2.6.32-504.el6.x86_64 #1 SMP Wed Oct 15 04:27:16 UTC 2014
+nodename: localhost.localdomain
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 16
+current working directory: /root/myproject/venv
+detected binary path: /usr/local/python27/bin/uwsgi
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /root/myproject/venv/zabbixmap/app/main
+your processes number limit is 65535
+your memory page size is 4096 bytes
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /root/myproject/venv/zabbixmap/app/main/mysite.sock fd 3
+Python version: 2.7.8 (default, Sep 21 2017, 09:25:28)  [GCC 4.4.7 20120313 (Red Hat 4.4.7-17)]
+Set PythonHome to /root/myproject/venv/zabbixmap/app/main/.env
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x207f280
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 218304 bytes (213 KB) for 2 cores
+*** Operational MODE: preforking ***
+Traceback (most recent call last):
+  File "./views.py", line 3, in <module>
+    from flask import render_template
+ImportError: No module named flask
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 28650)
+spawned uWSGI worker 1 (pid: 28651, cores: 1)
+spawned uWSGI worker 2 (pid: 28652, cores: 1)
+*** Starting uWSGI 2.0.15 (64bit) on [Thu Dec  7 14:37:51 2017] ***
+compiled with version: 4.4.7 20120313 (Red Hat 4.4.7-17) on 21 September 2017 09:28:53
+os: Linux-2.6.32-504.el6.x86_64 #1 SMP Wed Oct 15 04:27:16 UTC 2014
+nodename: localhost.localdomain
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 16
+current working directory: /root/myproject/venv
+detected binary path: /usr/local/python27/bin/uwsgi
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /root/myproject/venv/zabbixmap/app/main
+your processes number limit is 65535
+your memory page size is 4096 bytes
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /root/myproject/venv/zabbixmap/app/main/mysite.sock fd 3
+Python version: 2.7.8 (default, Sep 21 2017, 09:25:28)  [GCC 4.4.7 20120313 (Red Hat 4.4.7-17)]
+Set PythonHome to /root/myproject/venv/zabbixmap/app/main/.env
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x194d280
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 218304 bytes (213 KB) for 2 cores
+*** Operational MODE: preforking ***
+Traceback (most recent call last):
+  File "./views.py", line 3, in <module>
+    from flask import render_template
+ImportError: No module named flask
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 28659)
+spawned uWSGI worker 1 (pid: 28660, cores: 1)
+spawned uWSGI worker 2 (pid: 28661, cores: 1)
+*** Starting uWSGI 2.0.15 (64bit) on [Thu Dec  7 14:38:20 2017] ***
+compiled with version: 4.4.7 20120313 (Red Hat 4.4.7-17) on 21 September 2017 09:28:53
+os: Linux-2.6.32-504.el6.x86_64 #1 SMP Wed Oct 15 04:27:16 UTC 2014
+nodename: localhost.localdomain
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 16
+current working directory: /root/myproject/venv
+detected binary path: /usr/local/python27/bin/uwsgi
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /root/myproject/venv/zabbixmap/app/main
+your processes number limit is 65535
+your memory page size is 4096 bytes
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /root/myproject/venv/zabbixmap/app/main/mysite.sock fd 3
+Python version: 2.7.8 (default, Sep 21 2017, 09:25:28)  [GCC 4.4.7 20120313 (Red Hat 4.4.7-17)]
+Set PythonHome to /root/myproject/venv/zabbixmap/app/main/.env
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x27d0280
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 218304 bytes (213 KB) for 2 cores
+*** Operational MODE: preforking ***
+Traceback (most recent call last):
+  File "./views.py", line 3, in <module>
+    from flask import render_template
+ImportError: No module named flask
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 28678)
+spawned uWSGI worker 1 (pid: 28679, cores: 1)
+spawned uWSGI worker 2 (pid: 28680, cores: 1)
+*** Starting uWSGI 2.0.15 (64bit) on [Thu Dec  7 14:38:24 2017] ***
+compiled with version: 4.4.7 20120313 (Red Hat 4.4.7-17) on 21 September 2017 09:28:53
+os: Linux-2.6.32-504.el6.x86_64 #1 SMP Wed Oct 15 04:27:16 UTC 2014
+nodename: localhost.localdomain
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 16
+current working directory: /root/myproject/venv
+detected binary path: /usr/local/python27/bin/uwsgi
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /root/myproject/venv/zabbixmap/app/main
+your processes number limit is 65535
+your memory page size is 4096 bytes
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /root/myproject/venv/zabbixmap/app/main/mysite.sock fd 3
+Python version: 2.7.8 (default, Sep 21 2017, 09:25:28)  [GCC 4.4.7 20120313 (Red Hat 4.4.7-17)]
+Set PythonHome to /root/myproject/venv/zabbixmap/app/main/.env
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0xfb7760
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 218304 bytes (213 KB) for 2 cores
+*** Operational MODE: preforking ***
+Traceback (most recent call last):
+  File "./views.py", line 3, in <module>
+    from flask import render_template
+ImportError: No module named flask
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 28683)
+spawned uWSGI worker 1 (pid: 28684, cores: 1)
+spawned uWSGI worker 2 (pid: 28685, cores: 1)
+*** Starting uWSGI 2.0.15 (64bit) on [Thu Dec  7 14:39:00 2017] ***
+compiled with version: 4.4.7 20120313 (Red Hat 4.4.7-17) on 21 September 2017 09:28:53
+os: Linux-2.6.32-504.el6.x86_64 #1 SMP Wed Oct 15 04:27:16 UTC 2014
+nodename: localhost.localdomain
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 16
+current working directory: /root/myproject/venv
+detected binary path: /usr/local/python27/bin/uwsgi
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /root/myproject/venv/zabbixmap/app/main
+your processes number limit is 65535
+your memory page size is 4096 bytes
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /root/myproject/venv/zabbixmap/app/main/mysite.sock fd 3
+Python version: 2.7.8 (default, Sep 21 2017, 09:25:28)  [GCC 4.4.7 20120313 (Red Hat 4.4.7-17)]
+Set PythonHome to /root/myproject/venv/zabbixmap/app/main/.env
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x1ff6760
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 218304 bytes (213 KB) for 2 cores
+*** Operational MODE: preforking ***
+Traceback (most recent call last):
+  File "./views.py", line 3, in <module>
+    from flask import render_template
+ImportError: No module named flask
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 28692)
+spawned uWSGI worker 1 (pid: 28693, cores: 1)
+spawned uWSGI worker 2 (pid: 28694, cores: 1)
+*** Starting uWSGI 2.0.15 (64bit) on [Thu Dec  7 14:39:04 2017] ***
+compiled with version: 4.4.7 20120313 (Red Hat 4.4.7-17) on 21 September 2017 09:28:53
+os: Linux-2.6.32-504.el6.x86_64 #1 SMP Wed Oct 15 04:27:16 UTC 2014
+nodename: localhost.localdomain
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 16
+current working directory: /root/myproject/venv
+detected binary path: /usr/local/python27/bin/uwsgi
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /root/myproject/venv/zabbixmap/app/main
+your processes number limit is 65535
+your memory page size is 4096 bytes
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /root/myproject/venv/zabbixmap/app/main/mysite.sock fd 3
+Python version: 2.7.8 (default, Sep 21 2017, 09:25:28)  [GCC 4.4.7 20120313 (Red Hat 4.4.7-17)]
+Set PythonHome to /root/myproject/venv/zabbixmap/app/main/.env
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x2165760
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 218304 bytes (213 KB) for 2 cores
+*** Operational MODE: preforking ***
+Traceback (most recent call last):
+  File "./views.py", line 3, in <module>
+    from flask import render_template
+ImportError: No module named flask
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 28697)
+spawned uWSGI worker 1 (pid: 28698, cores: 1)
+spawned uWSGI worker 2 (pid: 28699, cores: 1)
+*** Starting uWSGI 2.0.15 (64bit) on [Thu Dec  7 14:39:16 2017] ***
+compiled with version: 4.4.7 20120313 (Red Hat 4.4.7-17) on 21 September 2017 09:28:53
+os: Linux-2.6.32-504.el6.x86_64 #1 SMP Wed Oct 15 04:27:16 UTC 2014
+nodename: localhost.localdomain
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 16
+current working directory: /root/myproject/venv
+detected binary path: /usr/local/python27/bin/uwsgi
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /root/myproject/venv/zabbixmap/app/main
+your processes number limit is 65535
+your memory page size is 4096 bytes
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /root/myproject/venv/zabbixmap/app/main/mysite.sock fd 3
+Python version: 2.7.8 (default, Sep 21 2017, 09:25:28)  [GCC 4.4.7 20120313 (Red Hat 4.4.7-17)]
+Set PythonHome to /root/myproject/venv/zabbixmap/app/main/.env
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x1988760
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 218304 bytes (213 KB) for 2 cores
+*** Operational MODE: preforking ***
+Traceback (most recent call last):
+  File "./views.py", line 3, in <module>
+    from flask import render_template
+ImportError: No module named flask
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 28703)
+spawned uWSGI worker 1 (pid: 28704, cores: 1)
+spawned uWSGI worker 2 (pid: 28705, cores: 1)
+*** Starting uWSGI 2.0.15 (64bit) on [Thu Dec  7 14:40:27 2017] ***
+compiled with version: 4.4.7 20120313 (Red Hat 4.4.7-17) on 21 September 2017 09:28:53
+os: Linux-2.6.32-504.el6.x86_64 #1 SMP Wed Oct 15 04:27:16 UTC 2014
+nodename: localhost.localdomain
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 16
+current working directory: /root/myproject/venv
+detected binary path: /usr/local/python27/bin/uwsgi
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /root/myproject/venv/zabbixmap/app/main
+your processes number limit is 65535
+your memory page size is 4096 bytes
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /root/myproject/venv/zabbixmap/app/main/mysite.sock fd 3
+Python version: 2.7.8 (default, Sep 21 2017, 09:25:28)  [GCC 4.4.7 20120313 (Red Hat 4.4.7-17)]
+Set PythonHome to /root/myproject/venv/zabbixmap/.env
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0xa9c760
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 218304 bytes (213 KB) for 2 cores
+*** Operational MODE: preforking ***
+Traceback (most recent call last):
+  File "./views.py", line 3, in <module>
+    from flask import render_template
+ImportError: No module named flask
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 28726)
+spawned uWSGI worker 1 (pid: 28727, cores: 1)
+spawned uWSGI worker 2 (pid: 28728, cores: 1)
+*** Starting uWSGI 2.0.15 (64bit) on [Thu Dec  7 14:44:43 2017] ***
+compiled with version: 4.4.7 20120313 (Red Hat 4.4.7-17) on 21 September 2017 09:28:53
+os: Linux-2.6.32-504.el6.x86_64 #1 SMP Wed Oct 15 04:27:16 UTC 2014
+nodename: localhost.localdomain
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 16
+current working directory: /root/myproject/venv
+detected binary path: /usr/local/python27/bin/uwsgi
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /root/myproject/venv/zabbixmap/app/main
+your processes number limit is 65535
+your memory page size is 4096 bytes
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /root/myproject/venv/zabbixmap/app/main/mysite.sock fd 3
+Python version: 2.7.8 (default, Sep 21 2017, 09:25:28)  [GCC 4.4.7 20120313 (Red Hat 4.4.7-17)]
+Set PythonHome to /root/myproject/venv/
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0xea3730
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 218304 bytes (213 KB) for 2 cores
+*** Operational MODE: preforking ***
+Traceback (most recent call last):
+  File "./views.py", line 3, in <module>
+    from flask import render_template
+ImportError: No module named flask
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 28769)
+spawned uWSGI worker 1 (pid: 28770, cores: 1)
+spawned uWSGI worker 2 (pid: 28771, cores: 1)
+*** Starting uWSGI 2.0.15 (64bit) on [Thu Dec  7 14:52:45 2017] ***
+compiled with version: 4.4.7 20120313 (Red Hat 4.4.7-17) on 21 September 2017 09:28:53
+os: Linux-2.6.32-504.el6.x86_64 #1 SMP Wed Oct 15 04:27:16 UTC 2014
+nodename: localhost.localdomain
+machine: x86_64
+clock source: unix
+pcre jit disabled
+detected number of CPU cores: 16
+current working directory: /root/myproject/venv
+detected binary path: /usr/local/python27/bin/uwsgi
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /root/myproject/venv/zabbixmap/app/main
+your processes number limit is 65535
+your memory page size is 4096 bytes
+detected max file descriptor number: 65535
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /root/myproject/venv/zabbixmap/app/main/mysite.sock fd 3
+Python version: 2.7.8 (default, Sep 21 2017, 09:25:28)  [GCC 4.4.7 20120313 (Red Hat 4.4.7-17)]
+Set PythonHome to /root/myproject/venv
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x2272740
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 218304 bytes (213 KB) for 2 cores
+*** Operational MODE: preforking ***
+Traceback (most recent call last):
+  File "./views.py", line 3, in <module>
+    from flask import render_template
+ImportError: No module named flask
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 28843)
+spawned uWSGI worker 1 (pid: 28844, cores: 1)
+spawned uWSGI worker 2 (pid: 28845, cores: 1)
+*** Starting uWSGI 2.0.12 (64bit) on [Mon Dec 11 03:29:42 2017] ***
+compiled with version: 5.4.0 20160609 on 07 December 2017 09:23:22
+os: Linux-4.4.0-87-generic #110-Ubuntu SMP Tue Jul 18 12:55:35 UTC 2017
+nodename: zabbix
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 8
+current working directory: /home/zabbix
+detected binary path: /home/zabbix/zabbixmap/.env/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+*** WARNING: you are running uWSGI as root !!! (use the --uid flag) *** 
+chdir() to /home/zabbix/zabbixmap/app/main
+your processes number limit is 31773
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/zabbix/zabbixmap/app/main/mysite.sock fd 3
+Python version: 2.7.9 (default, Dec  7 2017, 09:04:56)  [GCC 5.4.0 20160609]
+Set PythonHome to /home/zabbix/.env
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x278ab90
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 218304 bytes (213 KB) for 2 cores
+*** Operational MODE: preforking ***
+Traceback (most recent call last):
+  File "./views.py", line 3, in <module>
+    from flask import render_template
+ImportError: No module named flask
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 17786)
+spawned uWSGI worker 1 (pid: 17787, cores: 1)
+spawned uWSGI worker 2 (pid: 17788, cores: 1)
