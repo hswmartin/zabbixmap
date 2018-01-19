@@ -1,7 +1,7 @@
 function pp(){
         var data_info = {{ site_info|safe }};
 	var data_value = {{ showvalue|safe }};
-        $("span.BMap_Marker").remove();
+        map.clearOverlays();
 	for(var i= 0;i<data_info.length;i++){
 		var minute = parseInt((parseInt(data_value['9'][i][1]) / 60) % 60);
 		var hour = parseInt(((parseInt(data_value['9'][i][1]) / 60) / 60) % 24);
@@ -21,19 +21,19 @@ function pp(){
 			var myIcon = new BMap.Icon('{{ url_for('static', filename='hs.png')}}', new BMap.Size(32,32),{anchor: new BMap.Size(16, 32)});
 			var marker = new BMap.Marker(point, {icon:myIcon});
 			label.setStyle({ color : "red", fontSize : "8px" ,borderColor:"red"})
-			//marker.setAnimation(BMAP_ANIMATION_BOUNCE);
 		}else if(content1.indexOf("VPN")!=-1){
                         var myIcon = new BMap.Icon('{{ url_for('static', filename='vpn.png')}}', new BMap.Size(32,32),{anchor: new BMap.Size(16, 32)});
                         var marker = new BMap.Marker(point, {icon:myIcon});
                         label.setStyle({ color : "black", fontSize : "8px" ,borderColor:"blue"})
-                        //marker.setAnimation(BMAP_ANIMATION_BOUNCE);
+                        
                 }
 		else{
 			var myIcon = new BMap.Icon('{{ url_for('static', filename='ls.png')}}', new BMap.Size(32,32),{anchor: new BMap.Size(16, 32)});
 			var marker = new BMap.Marker(point, {icon:myIcon});
-			label.setStyle({ color : "black", fontSize : "8px" ,borderColor:"green"})
+			label.setStyle({ color : "black", fontSize : "8px" ,borderColor:"green"});
 		}
 		map.addOverlay(marker);
+if(parseInt(data_value['9'][i][0])==0 || networkflow1 == 0.000){marker.setAnimation(BMAP_ANIMATION_BOUNCE);}
 		marker.setLabel(label);
 marker.addEventListener("dblclick", function(){
         if(map.getZoom()==18){

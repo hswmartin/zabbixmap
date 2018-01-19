@@ -128,6 +128,7 @@ map.addControl(stCtrl);
 			label.setStyle({ color : "black", fontSize : "8px" ,borderColor:"green"})
 		}
 		map.addOverlay(marker);
+if(parseInt(data_value['9'][i][0])==0 || networkflow1 == 0.000){marker.setAnimation(BMAP_ANIMATION_BOUNCE);}
 		marker.setLabel(label);
 marker.addEventListener("dblclick", function(){    
 	if(map.getZoom()==18){
