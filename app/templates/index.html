@@ -105,27 +105,27 @@ map.addControl(stCtrl);
 		var networkflow1 = networkflow.toFixed(3);
                 var netin1=netin.toFixed(3);
 		var point = new BMap.Point(data_info[i][0],data_info[i][1]);
-		var content1 = data_info[i][2] + networkflow1 + " Mbps";
+		var content1 = data_info[i][2] + "入："+networkflow1 + " Mbps";
         	var content2 = "在线时间:"+day+"天"+hour+"小时"+minute+"分钟";
-                content2=netin1+" Mbps";
-		var content3 = "入："+content1 +"出："+ content2;
+                content2="出："+netin1+" Mbps";
+		var content3 = content1 + content2;
 		var label = new BMap.Label(content3, {offset:new BMap.Size(27,5)});
                 
 		if (parseInt(data_value['9'][i][0])==0 || networkflow1 == 0.000){
 			var myIcon = new BMap.Icon('{{ url_for('static', filename='hs1.png')}}', new BMap.Size(32,32),{anchor: new BMap.Size(16, 32)});
 			var marker = new BMap.Marker(point, {icon:myIcon});
-			label.setStyle({ color : "red", fontSize : "8px" ,borderColor:"red",backgroundColor:"transparent"})
+			label.setStyle({ color : "red", fontSize : "8px" ,backgroundColor:"transparent"})
 			//marker.setAnimation(BMAP_ANIMATION_BOUNCE);
 		}else if(content1.indexOf("VPN")!=-1){
                         var myIcon = new BMap.Icon('{{ url_for('static', filename='vpn.png')}}', new BMap.Size(32,32),{anchor: new BMap.Size(16, 32)});
                         var marker = new BMap.Marker(point, {icon:myIcon});
-                        label.setStyle({ color : "black", fontSize : "8px" ,borderColor:"blue",backgroundColor:"transparent"})
+                        label.setStyle({ color : "white", fontSize : "8px" ,backgroundColor:"transparent"})
                         //marker.setAnimation(BMAP_ANIMATION_BOUNCE);
                 }
 		else{
 			var myIcon = new BMap.Icon('{{ url_for('static', filename='ls.png')}}', new BMap.Size(32,32),{anchor: new BMap.Size(16, 32)});
 			var marker = new BMap.Marker(point, {icon:myIcon});
-			label.setStyle({ color : "black", fontSize : "8px" ,borderColor:"green",backgroundColor:"transparent"})
+			label.setStyle({ color : "white", fontSize : "8px" ,backgroundColor:"transparent"})
 		}
 		map.addOverlay(marker);
 if(parseInt(data_value['9'][i][0])==0 || networkflow1 == 0.000){marker.setAnimation(BMAP_ANIMATION_BOUNCE);}
