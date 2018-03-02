@@ -112,7 +112,7 @@ map.addControl(stCtrl);
 		var label = new BMap.Label(content3, {offset:new BMap.Size(27,-8)});
                 
 		if (parseInt(data_value['9'][i][0])==0 || networkflow1 == 0.000){
-			var myIcon = new BMap.Icon('{{ url_for('static', filename='hs.png')}}', new BMap.Size(32,32),{anchor: new BMap.Size(16, 32)});
+			var myIcon = new BMap.Icon('{{ url_for('static', filename='hs1.png')}}', new BMap.Size(32,32),{anchor: new BMap.Size(16, 32)});
 			var marker = new BMap.Marker(point, {icon:myIcon});
 			label.setStyle({ color : "red", fontSize : "8px" ,borderColor:"red"})
 			//marker.setAnimation(BMAP_ANIMATION_BOUNCE);
