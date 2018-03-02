@@ -20,17 +20,17 @@ function pp(){
 		if (parseInt(data_value['9'][i][0])==0 || networkflow1 == 0.000){
 			var myIcon = new BMap.Icon('{{ url_for('static', filename='hs1.png')}}', new BMap.Size(32,32),{anchor: new BMap.Size(16, 32)});
 			var marker = new BMap.Marker(point, {icon:myIcon});
-			label.setStyle({ color : "red", fontSize : "8px" ,borderColor:"red"})
+			label.setStyle({ color : "red", fontSize : "8px" ,borderColor:"red",backgroundColor:"rgba(100,100,100,0.5)"})
 		}else if(content1.indexOf("VPN")!=-1){
                         var myIcon = new BMap.Icon('{{ url_for('static', filename='vpn.png')}}', new BMap.Size(32,32),{anchor: new BMap.Size(16, 32)});
                         var marker = new BMap.Marker(point, {icon:myIcon});
-                        label.setStyle({ color : "black", fontSize : "8px" ,borderColor:"blue"})
+                        label.setStyle({ color : "white", fontSize : "8px" ,borderColor:"blue",backgroundColor:"rgba(100,100,100,0.5)"})
                         
                 }
 		else{
 			var myIcon = new BMap.Icon('{{ url_for('static', filename='ls.png')}}', new BMap.Size(32,32),{anchor: new BMap.Size(16, 32)});
 			var marker = new BMap.Marker(point, {icon:myIcon});
-			label.setStyle({ color : "black", fontSize : "8px" ,borderColor:"green"});
+			label.setStyle({ color : "white", fontSize : "8px" ,borderColor:"green",backgroundColor:"rgba(100,100,100,0.5)"});
 		}
 		map.addOverlay(marker);
 if(parseInt(data_value['9'][i][0])==0 || networkflow1 == 0.000){marker.setAnimation(BMAP_ANIMATION_BOUNCE);}
