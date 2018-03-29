@@ -33,7 +33,7 @@ function pp(){
 			label.setStyle({ color : "white", fontSize : "8px" ,borderColor:"green",backgroundColor:"rgba(100,100,100,0.5)"});
 		}
 		map.addOverlay(marker);
-if(parseInt(data_value['9'][i][0])==0 || networkflow1 == 0.000){marker.setAnimation(BMAP_ANIMATION_BOUNCE);}
+if(parseInt(data_value['9'][i][0])==0 && networkflow1 == 0.000){marker.setAnimation(BMAP_ANIMATION_BOUNCE);}
 		marker.setLabel(label);
 marker.addEventListener("dblclick", function(){
         if(map.getZoom()==18){
