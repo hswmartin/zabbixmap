@@ -10,7 +10,9 @@ datadir2 = "/tmp/data2.json"
 
 showvalues(datadir,int(sys.argv[1]))
 site_info(datadir2,int(sys.argv[1]))
-os.remove(basedir)
-os.remove(basedir2)
+if os.path.exists(datadir):
+    os.remove(basedir)
+if os.path.exists(datadir2):
+    os.remove(basedir2)
 shutil.move(datadir, basedir)
 shutil.move(datadir2, basedir2)
